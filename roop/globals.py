@@ -20,3 +20,5 @@ max_memory: Optional[int] = None
 execution_providers: List[str] = []
 execution_threads: Optional[int] = None
 log_level: str = 'error'
+backend_update_url: str = None
+last_progress: int = 0
