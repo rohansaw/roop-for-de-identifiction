@@ -52,7 +52,7 @@ def parse_args() -> None:
 
     args = program.parse_args()
 
-    roop.globals.source_path = "data/" + args.source_path + ".jpg"
+    roop.globals.source_path = "/app/models/docker_models/roop/faces/" + args.source_path + ".jpg"
     roop.globals.target_path = args.target_path
     roop.globals.output_path = normalize_output_path(roop.globals.source_path, roop.globals.target_path, args.output_path)
     roop.globals.headless = roop.globals.source_path is not None and roop.globals.target_path is not None and roop.globals.output_path is not None
